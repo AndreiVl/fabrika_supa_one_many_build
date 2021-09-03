@@ -4496,7 +4496,7 @@ input[type="number"] {
   @media (min-width: 992px) {
     .compound__left {
       /* 2 Block model */
-      max-width: 227px; } }
+      max-width: 235px; } }
 
 .compound__right {
   /* 2 Block model */
@@ -4510,7 +4510,7 @@ input[type="number"] {
   @media (min-width: 992px) {
     .compound__right {
       /* 2 Block model */
-      max-width: 227px; } }
+      max-width: 235px; } }
 
 .buy-action {
   /* 2 Block model */
