@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" href="images/favicon.ico">
+      <title>Суп «Лапша с курицей»</title>
+      <link href="css/jquery.modal.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet"><!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    </head>
+  <body>
+    <div class="wrapper">
+            <header class="header header--page">
+              <div class="container">
+                <div class="header__container">
+                  <div class="header__logo"><a class="logo" href="/">
+                            <picture><img src="images/logo.png" alt="Logo"></picture></a>
+                  </div>
+                  <div class="header__content">
+                    <div class="header__body">
+                      <div class="header__nav">
+                        <div class="header__city">
+                                <div class="icon-text icon-text--white"><img class="icon-text__img" src="images/icon--map-svg.svg" alt="маркер карты"><span class="icon-text__text">Ваш регион:</span>
+                                </div>
+                                <select class="city-select">
+                                  <option value="select_city">Выберите город</option>
+                                  <option value="moscow">Москва</option>
+                                  <option value="st_petersburg">Санкт-Петербург</option>
+                                  <option value="neftekamsk">Нефтекамск</option>
+                                  <option value="zlatoust">Златоуст</option>
+                                </select>
+                        </div>
+                        <div class="header__menu">
+                                <nav class="menu">
+                                  <ul class="menu__list">
+                                    <li><a class="menu__link" href="#delivery">Доставка и оплата</a></li>
+                                  </ul>
+                                </nav>
+                                <div class="icon-text icon-text--white icon-text--18"><img class="icon-text__img" src="images/icon--phone.svg" alt="Телефон"><a class="icon-text__link" href="tel:+74959227206">+7(495)922-72-06</a>
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="header__cart"><a class="cart-header" href="/order">
+                                    <svg class="icon icon--basket icon--24">
+                                      <use xlink:href="images/icons.svg#icon--basket"></use>
+                                    </svg><span class="cart-header__number">0</span></a>
+                    </div>
+                    <div class="header__hamburger">
+                      <button class="hamburger" type="button"><span class="visually-hidden">Открыть меню</span><span class="hamburger__visual"> </span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+      <main class="main main--page">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+                    <div class="breadcrumbs">
+                      <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item"><span>Суп «Лапша с&nbsp;курицей»</span>
+                        </li>
+                      </ul>
+                    </div>
+            </div>
+          </div>
+        </div>
+        <section class="page-product">
+          <div class="container page-product__top">
+            <div class="row">
+              <div class="col-12 col-md-5">
+                <div class="page-product__header page-product__desctop-hide">
+                  <h1 class="h1 h1--50 h1--black page-product__title">Суп «Лапша с&nbsp;курицей»</h1>
+                  <p class="text text--16 text--gray page-product__subtitle">вес нетто: 320 г</p>
+                </div>
+                <div class="page-product__img"><img src="images/sup_lapsha_s_kuricej_big.png" alt="Суп «Лапша с курицей»" title="Суп «Лапша с курицей»"></div>
+              </div>
+              <div class="col-12 col-md-7">
+                <div class="page-product__body">
+                  <div class="page-product__header page-product__mobile-hide"> 
+                    <h1 class="h1 h1--50 h1--black page-product__title">Суп «Лапша с&nbsp;курицей»</h1>
+                    <p class="text text--16 text--gray page-product__subtitle">вес нетто: 320 г</p>
+                  </div>
+                  <div class="page-product__composition"><span class="text text--16 page-product__composition-title"><strong>Состав:</strong></span>
+                    <p class="text text--14 text--gray page-product__composition-text">вода, куры целые 1 кат., лапша яичная п/ф(мука пшеничная в/с, яйцо куриное, растительное масло, соль), морковь свежая, лук репчатый свежий, масло растительное, укроп свежий, масло сливочное, соль, специи (куркума, ….</p>
+                    <div class="page-product__compound">
+                            <div class="compound">
+                              <div class="compound__left">
+                                      <div class="compound-value">
+                                        <p class="text text--16 text--bold compound-value__title">Пищевая ценность на 100 г:</p>
+                                        <div class="compound-value__component">
+                                          <p class="text text--14 compound-value__dashe"> <span>белки</span></p>
+                                          <p class="text text--14 compound-value__number">5,50 г</p>
+                                        </div>
+                                        <div class="compound-value__component">
+                                          <p class="text text--14 compound-value__dashe"> <span>жиры</span></p>
+                                          <p class="text text--14 compound-value__number">2,98 г</p>
+                                        </div>
+                                        <div class="compound-value__component">
+                                          <p class="text text--14 compound-value__dashe"> <span>углеводы</span></p>
+                                          <p class="text text--14 compound-value__number">7,88 г</p>
+                                        </div>
+                                        <div class="compound-value__component">
+                                          <p class="text text--14 compound-value__dashe"> <span>калории</span></p>
+                                          <p class="text text--14 compound-value__number">80,2</p>
+                                        </div>
+                                      </div>
+                              </div>
+                              <div class="compound__right">
+                                      <div class="compound-value">
+                                        <p class="text text--16 text--bold compound-value__title">Пищевая ценность на 320 г:</p>
+                                        <div class="compound-value__component">
+                                          <p class="text text--14 compound-value__dashe"> <span>белки</span></p>
+                                          <p class="text text--14 compound-value__number">17,60 г</p>
+                                        </div>
+                                        <div class="compound-value__component">
+                                          <p class="text text--14 compound-value__dashe"> <span>жиры</span></p>
+                                          <p class="text text--14 compound-value__number">9,54 г</p>
+                                        </div>
+                                        <div class="compound-value__component">
+                                          <p class="text text--14 compound-value__dashe"> <span>углеводы</span></p>
+                                          <p class="text text--14 compound-value__number">25,22 г</p>
+                                        </div>
+                                        <div class="compound-value__component">
+                                          <p class="text text--14 compound-value__dashe"> <span>калории</span></p>
+                                          <p class="text text--14 compound-value__number">256,6</p>
+                                        </div>
+                                      </div>
+                              </div>
+                            </div>
+                    </div>
+                  </div>
+                  <div class="page-product__buy">
+                          <div class="buy-action" data-id="sup_lapsha_s_kuricej">
+                            <div class="buy-action__left">
+                              <div class="buy-action__price"><span>179</span>.00 ₽</div>
+                                    <div class="quantity">
+                                      <div class="quantity-button quantity-down"><span>-</span></div>
+                                      <input type="number" min="1" max="1000" step="1" value="1">
+                                      <div class="quantity-button quantity-up"><span>+</span></div>
+                                    </div>
+                            </div>
+                            <div class="buy-action__right">
+                                    <button class="btn btn--green-flat  productPageAddToCart" data-id="sup_lapsha_s_kuricej" type="button"><span class="btn__text">Добавить в корзину</span>
+                                    </button>
+                            </div>
+                          </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page-product__tabs">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                        <div class="tab">
+                          <div class="tab__header">
+                                  <ul class="tabs-header">
+                                    <li class="tabs-header__item"><a class="tabs-header__link tabs-header__link--active" href="#tab-1">Описание</a>
+                                    </li>
+                                    <li class="tabs-header__item"><a class="tabs-header__link" href="#tab-2">Приготовление</a>
+                                    </li>
+                                    <li class="tabs-header__item"><a class="tabs-header__link" href="#tab-3">Характеристики</a>
+                                    </li>
+                                  </ul>
+                          </div>
+                          <div class="tab__body">
+                            <div class="tab__item tab__item--active" id="tab-1">
+                              <div class="tab__content">
+                                <div class="tab__content-body"><p class="text text--bold">Настоящая домашняя лапша и&nbsp;курочка, которую мы&nbsp;варим не&nbsp;меньше 3&nbsp;часов!</p><p class="text">А&nbsp;Вы&nbsp;знаете, в&nbsp;чем секрет хорошей домашней лапши с&nbsp;курочкой? Обычно, люди варят купленного в&nbsp;магазине бройлера, минут&nbsp;30, не&nbsp;больше. Возможно, еще добавляют бульонный кубик для вкуса, затем забрасывают вермишель и&nbsp;вуаля, готово! Дешево и&nbsp;сердито.</p> <p class="text">Но&nbsp;если&nbsp;Вы хотите на&nbsp;самом деле побаловать себя настоящим супом с&nbsp;домашней лапшой(6 яиц на&nbsp;1&nbsp;кг муки) и&nbsp;ароматным, целебным бульоном из&nbsp;суповой курицы, то&nbsp;это к&nbsp;нам!</p></div>
+                                <div class="video-iframe video-iframe--page-product">
+                                  <iframe class="iframe-video" id="video-start" width="560" height="315" src="https://www.youtube.com/embed/" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab__item" id="tab-2">
+                              <div class="tab__content"><p class="text text--22">1. В СВЧ-печи: приоткрыть крышку контейнера, разогреть на максимальной мощности в течение 8-9 минут.</p><p class="text text--22">2. В духовом шкафу или на плите: переложить замороженный продукт в подходящую посуду и разогревать до закипания.</p></div>
+                            </div>
+                            <div class="tab__item" id="tab-3">
+                              <div class="tab__content"><p class="text text--22">Вес нетто: 320 г <br> Производитель: ООО ГРАНД, Челябинская область, г. Златоуст, ул. Косотурская, д. 17. <br> Тел.: +7(3513)62-00-67</p> <p class="text text--22">ТУ 10.89.11-017-19421968-2020</p></div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+              <section class="cat block cat--mini cat--catalog block--pages" id="cat">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="block__title">
+                        <h2 class="h2">Каталог</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="borshch_s_govyadinoj">
+                              <div class="cat-item__body"><a href="/borshch_s_govyadinoj"><img class="cat-item__img" src="images/borshch_s_govyadinoj.png" alt="Суп &amp;laquo;Борщ Полтавский&amp;raquo;"></a><a class="h3 cat-item__title" href="/borshch_s_govyadinoj">Суп &laquo;Борщ Полтавский&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Борщ&nbsp;&mdash; самый известный русский суп! А&nbsp;у&nbsp;нас он&nbsp;еще и&nbsp;самый вкусный!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>209</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="borshch_s_govyadinoj" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="solyanka_sbornaya_myasnaya">
+                              <div class="cat-item__body"><a href="/solyanka_sbornaya_myasnaya"><img class="cat-item__img" src="images/solyanka_sbornaya_myasnaya.png" alt="Суп &amp;laquo;Солянка&amp;raquo;"></a><a class="h3 cat-item__title" href="/solyanka_sbornaya_myasnaya">Суп &laquo;Солянка&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Солянка или селянка? Теперь уже не&nbsp;важно! Этот суп&nbsp;&mdash; настоящий хит в&nbsp;России!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>239</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="solyanka_sbornaya_myasnaya" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="sup_lapsha_s_kuricej">
+                              <div class="cat-item__body"><a href="/sup_lapsha_s_kuricej"><img class="cat-item__img" src="images/sup_lapsha_s_kuricej.png" alt="Суп &amp;laquo;Лапша с&amp;nbsp;курицей&amp;raquo;"></a><a class="h3 cat-item__title" href="/sup_lapsha_s_kuricej">Суп &laquo;Лапша с&nbsp;курицей&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Настоящая домашняя лапша и&nbsp;курочка, которую мы&nbsp;варим не&nbsp;меньше 3&nbsp;часов!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>179</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="sup_lapsha_s_kuricej" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="lagman">
+                              <div class="cat-item__body"><a href="/lagman"><img class="cat-item__img" src="images/lagman.png" alt="Суп &amp;laquo;ЛАГМАН с&amp;nbsp;говядиной&amp;raquo;"></a><a class="h3 cat-item__title" href="/lagman">Суп &laquo;ЛАГМАН с&nbsp;говядиной&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Авторский рецепт Лагмана от&nbsp;Егора Булатова! Не&nbsp;пропустите, это нереально вкусно!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>209</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="lagman" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="vengerskij_gulyash">
+                              <div class="cat-item__body"><a href="/vengerskij_gulyash"><img class="cat-item__img" src="images/vengerskij_gulyash.png" alt="Суп &amp;laquo;Гуляш с&amp;nbsp;говядиной&amp;raquo;"></a><a class="h3 cat-item__title" href="/vengerskij_gulyash">Суп &laquo;Гуляш с&nbsp;говядиной&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Сломай стереотипы! Попробуй настоящий венгерский гуляш!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>219</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="vengerskij_gulyash" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="afrikanskij_orekhovyj_sup">
+                              <div class="cat-item__body"><a href="/afrikanskij_orekhovyj_sup"><img class="cat-item__img" src="images/afrikanskij_orekhovyj_sup.png" alt="Суп &amp;laquo;Африканский ореховый&amp;raquo;"></a><a class="h3 cat-item__title" href="/afrikanskij_orekhovyj_sup">Суп &laquo;Африканский ореховый&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Максимальный экстрим не&nbsp;для слабонервных! Божественно вкусно!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>219</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="afrikanskij_orekhovyj_sup" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="gruzinskij_harcho_s_govyadinoj">
+                              <div class="cat-item__body"><a href="/gruzinskij_harcho_s_govyadinoj"><img class="cat-item__img" src="images/gruzinskij_harcho_s_govyadinoj.png" alt="Суп &amp;laquo;Харчо с&amp;nbsp;говядиной&amp;raquo;"></a><a class="h3 cat-item__title" href="/gruzinskij_harcho_s_govyadinoj">Суп &laquo;Харчо с&nbsp;говядиной&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Рецепт знаменитого грузинского шефа Романоза Григалашвили!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>219</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="gruzinskij_harcho_s_govyadinoj" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="indijskij_dal">
+                              <div class="cat-item__body"><a href="/indijskij_dal"><img class="cat-item__img" src="images/indijskij_dal.png" alt="Суп &amp;laquo;Масурдал&amp;raquo;"></a><a class="h3 cat-item__title" href="/indijskij_dal">Суп &laquo;Масурдал&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Жемчужина индийской кухни! Всегда мало, всегда нарасхват!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>199</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="indijskij_dal" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <div class="subscription-form block subscription-form--pages">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-md-10 offset-md-1">
+                      <div class="subscription-form__body">
+                        <div class="subscription-form__left">
+                          <h2 class="h2 h2--32 subscription-form__title">Получи скидку <span>10%</span></h2>
+                          <p class="text-14 text-14--color-1">Скидка на второй заказ при покупке от 12 порций</p>
+                        </div>
+                        <div class="subscription-form__rigt">
+                          <div class="form-subscription">
+                            <form class="form-subscription__form" action="#" method="post">
+                              <div class="form-subscription__form-item">
+                                      <div class="input input--form">
+                                        <input class="input__input" type="email" name="email_client" id="email_client" placeholder="Ваш Email">
+                                      </div>
+                              </div>
+                              <div class="form-subscription__form-item">
+                                      <button class="btn" type="submit"><span class="btn__text">отправить</span>
+                                      </button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <section class="delivery block block--pages delivery--pages" id="delivery">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="block__title">
+                        <h2 class="h2">Доставка</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-4 delivery-item">
+                            <div class="item-delivery">
+                              <div class="item-delivery__value">01</div>
+                              <p class="text text--gray item-delivery__desc">Доставка осуществляется после подтверждения заказа и согласования даты и времени.</p>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-4 delivery-item">
+                            <div class="item-delivery">
+                              <div class="item-delivery__value">02</div>
+                              <p class="text text--gray item-delivery__desc">Курьеры обеспечены медицинскими масками и санитайзерами для обработки рук.</p>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-4 delivery-item">
+                            <div class="item-delivery">
+                              <div class="item-delivery__value">03</div>
+                              <p class="text text--gray item-delivery__desc">За 30 минут до приезда курьер позвонит Вам для подтверждения доставки.</p>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-4 delivery-item">
+                            <div class="item-delivery">
+                              <div class="item-delivery__value">04</div>
+                              <p class="text text--gray item-delivery__desc">Все сотрудники склада и службы доставки проходят ежедневные медосмотры.</p>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-4 delivery-item">
+                            <div class="item-delivery">
+                              <div class="item-delivery__value">05</div>
+                              <p class="text text--gray item-delivery__desc">На складе и во время доставки соблюдается необходимый температурный режим</p>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-4 delivery-item">
+                            <div class="item-delivery">
+                              <div class="item-delivery__value">06</div>
+                              <p class="text text--gray item-delivery__desc">Вся продукция герметично упакована, транспортная тара опломбирована.</p>
+                            </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+        <div class="back">
+          <div class="container">
+            <div class="row">
+              <div class="col-12"><a class="link-icon" href="/">
+                              <svg class="icon icon--arrows-left icon--17">
+                                <use xlink:href="images/icons.svg#icon--arrows-left"></use>
+                              </svg><span class="link-icon__text">Вернуться на главную</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 footer__page">
+              <div class="footer__page">
+                <p class="text text--16 text--white">© 2020, ООО «ГРАНД» Все права защищены</p>
+                <p class="text text--16 text--white">Юридический адрес: 456200, Челябинская область, г. Златоуст, ул. Косотурская, д. 17, тел.<br><a class="link link--white" href="tel:+73513620067">+7&nbsp;(351)&nbsp;362&#8209;00&#8209;67</a>,  <a class="link link--white" href="tel:+73513620080">+7&nbsp;(351)&nbsp;362&#8209;00&#8209;80</a>.</p>
+              </div>
+              <div class="footer__disclaimer footer__page">
+                <p class="text text--12 text--white">Изготовитель вправе менять комплектацию и характеристики товара без предварительного уведомления. Пожалуйста, уточняйте информацию у менеджеров.<br>Интернет ресурс носит исключительно информационный характер и не является публичной офертой, определяемой положениями ст. 437 Гражданского кодекса РФ.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal city" id="cityNameModal">
+        <div class="modal-form__body">
+          <p class="text text--bold text--16 modal-form__title">Выбор города</p>
+          <div class="city__select">
+                  <select class="city-select city-select--modal">
+                    <option value="select_city">Выберите город</option>
+                    <option value="moscow">Москва</option>
+                    <option value="st_petersburg">Санкт-Петербург</option>
+                    <option value="neftekamsk">Нефтекамск</option>
+                    <option value="zlatoust">Златоуст</option>
+                  </select>
+          </div>
+          <p class="modal-form__desc">Если вашего города нет в списке, значит наша компания не осуществляет доставку в вашем регионе. Приносим свои извинения и надеемся, что в скором времени мы откроем в вашем городе представительство.</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.modal.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>$(document).ready(function () {	svg4everybody({});});</script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" href="images/favicon.ico">
+      <title>Фабрика Супа</title>
+      <link href="css/jquery.modal.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet"><!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    </head>
+  <body>
+    <div class="wrapper">
+            <header class="header">
+              <div class="container">
+                <div class="header__container">
+                  <div class="header__logo"><a class="logo" href="/">
+                            <picture><img src="images/logo.png" alt="Logo"></picture></a>
+                  </div>
+                  <div class="header__content">
+                    <div class="header__body">
+                      <div class="header__nav">
+                        <div class="header__city">
+                                <div class="icon-text icon-text--white"><img class="icon-text__img" src="images/icon--map-svg.svg" alt="маркер карты"><span class="icon-text__text">Ваш регион:</span>
+                                </div>
+                                <select class="city-select">
+                                  <option value="select_city">Выберите город</option>
+                                  <option value="moscow">Москва</option>
+                                  <option value="st_petersburg">Санкт-Петербург</option>
+                                  <option value="neftekamsk">Нефтекамск</option>
+                                  <option value="zlatoust">Златоуст</option>
+                                </select>
+                        </div>
+                        <div class="header__menu">
+                                <nav class="menu">
+                                  <ul class="menu__list">
+                                    <li><a class="menu__link" href="#delivery">Доставка и оплата</a></li>
+                                    <li><a class="menu__link" href="#contacts">Контакты</a></li>
+                                  </ul>
+                                </nav>
+                                <div class="icon-text icon-text--white icon-text--18"><img class="icon-text__img" src="images/icon--phone.svg" alt="Телефон"><a class="icon-text__link" href="tel:+74959227206">+7(495)922-72-06</a>
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="header__cart"><a class="cart-header" href="/order">
+                                    <svg class="icon icon--basket icon--24">
+                                      <use xlink:href="images/icons.svg#icon--basket"></use>
+                                    </svg><span class="cart-header__number">0</span></a>
+                    </div>
+                    <div class="header__hamburger">
+                      <button class="hamburger" type="button"><span class="visually-hidden">Открыть меню</span><span class="hamburger__visual"> </span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+      <main class="main">
+        <div class="top">
+          <div class="video-bg" id="video-bg">
+            <video id="video-bg-player" preload="auto" autoplay="autoplay" loop="loop" muted="muted">
+              <source src="images/video-bg.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+              <source src="images/video-bg.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
+            </video>
+          </div>
+          <div>&nbsp;</div>
+          <div class="top__body">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-10 offset-lg-1">
+                  <div class="top__info">
+                    <h1 class="h1 top__title">Интернет магазин<br>лучших супов мира<br>от&nbsp;ЕГОРА БУЛАТОВА </h1>
+                    <p class="lead top__lead">Ресторанная технология шоковой заморозки&nbsp;&mdash; разогревайте и&nbsp;наслаждайтесь в&nbsp;любое удобное время!</p><a class="btn" href="#" role="button"><span class="btn__text">Скидка 10% на первый заказ</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="top__footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="top__bottom">
+                    <div>&nbsp;</div>
+                    <div class="top__scroll"><a class="btn btn--icon" href="#" role="button">
+                                    <svg class="icon icon--arrow-bottom ">
+                                      <use xlink:href="images/icons.svg#icon--arrow-bottom"></use>
+                                    </svg></a>
+                    </div>
+                    <div class="top__social"><a class="btn btn--icon" href="https://www.youtube.com/channel/UCrhUdp4BER6wkWOX9hpFuSw" role="button" target="_blank">
+                                    <svg class="icon icon--youtube ">
+                                      <use xlink:href="images/icons.svg#icon--youtube"></use>
+                                    </svg></a><a class="btn btn--icon" href="https://vk.com/chefegorbulatov" role="button" target="_blank">
+                                    <svg class="icon icon--vk ">
+                                      <use xlink:href="images/icons.svg#icon--vk"></use>
+                                    </svg></a><a class="btn btn--icon" href="https://www.facebook.com/people/Егор-Булатов/100054811620555" role="button" target="_blank">
+                                    <svg class="icon icon--facebook ">
+                                      <use xlink:href="images/icons.svg#icon--facebook"></use>
+                                    </svg></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="about-us gray block" id="about-us">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="block__title">
+                  <h2 class="h2">О нашем магазине</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-12 col-xl-10">
+                <div class="video-iframe">
+                  <iframe class="iframe-video" id="video-start" width="560" height="315" src="https://www.youtube.com/embed/YtYugt5pme4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+              <section class="cat block" id="cat">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="block__title">
+                        <h2 class="h2">Наше меню</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="borshch_s_govyadinoj">
+                              <div class="cat-item__body"><a href="/borshch_s_govyadinoj"><img class="cat-item__img" src="images/borshch_s_govyadinoj.png" alt="Суп &amp;laquo;Борщ Полтавский&amp;raquo;"></a><a class="h3 cat-item__title" href="/borshch_s_govyadinoj">Суп &laquo;Борщ Полтавский&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Борщ&nbsp;&mdash; самый известный русский суп! А&nbsp;у&nbsp;нас он&nbsp;еще и&nbsp;самый вкусный!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>209</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="borshch_s_govyadinoj" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="solyanka_sbornaya_myasnaya">
+                              <div class="cat-item__body"><a href="/solyanka_sbornaya_myasnaya"><img class="cat-item__img" src="images/solyanka_sbornaya_myasnaya.png" alt="Суп &amp;laquo;Солянка&amp;raquo;"></a><a class="h3 cat-item__title" href="/solyanka_sbornaya_myasnaya">Суп &laquo;Солянка&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Солянка или селянка? Теперь уже не&nbsp;важно! Этот суп&nbsp;&mdash; настоящий хит в&nbsp;России!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>239</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="solyanka_sbornaya_myasnaya" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="sup_lapsha_s_kuricej">
+                              <div class="cat-item__body"><a href="/sup_lapsha_s_kuricej"><img class="cat-item__img" src="images/sup_lapsha_s_kuricej.png" alt="Суп &amp;laquo;Лапша с&amp;nbsp;курицей&amp;raquo;"></a><a class="h3 cat-item__title" href="/sup_lapsha_s_kuricej">Суп &laquo;Лапша с&nbsp;курицей&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Настоящая домашняя лапша и&nbsp;курочка, которую мы&nbsp;варим не&nbsp;меньше 3&nbsp;часов!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>179</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="sup_lapsha_s_kuricej" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="lagman">
+                              <div class="cat-item__body"><a href="/lagman"><img class="cat-item__img" src="images/lagman.png" alt="Суп &amp;laquo;ЛАГМАН с&amp;nbsp;говядиной&amp;raquo;"></a><a class="h3 cat-item__title" href="/lagman">Суп &laquo;ЛАГМАН с&nbsp;говядиной&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Авторский рецепт Лагмана от&nbsp;Егора Булатова! Не&nbsp;пропустите, это нереально вкусно!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>209</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="lagman" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="vengerskij_gulyash">
+                              <div class="cat-item__body"><a href="/vengerskij_gulyash"><img class="cat-item__img" src="images/vengerskij_gulyash.png" alt="Суп &amp;laquo;Гуляш с&amp;nbsp;говядиной&amp;raquo;"></a><a class="h3 cat-item__title" href="/vengerskij_gulyash">Суп &laquo;Гуляш с&nbsp;говядиной&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Сломай стереотипы! Попробуй настоящий венгерский гуляш!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>219</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="vengerskij_gulyash" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="afrikanskij_orekhovyj_sup">
+                              <div class="cat-item__body"><a href="/afrikanskij_orekhovyj_sup"><img class="cat-item__img" src="images/afrikanskij_orekhovyj_sup.png" alt="Суп &amp;laquo;Африканский ореховый&amp;raquo;"></a><a class="h3 cat-item__title" href="/afrikanskij_orekhovyj_sup">Суп &laquo;Африканский ореховый&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Максимальный экстрим не&nbsp;для слабонервных! Божественно вкусно!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>219</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="afrikanskij_orekhovyj_sup" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="gruzinskij_harcho_s_govyadinoj">
+                              <div class="cat-item__body"><a href="/gruzinskij_harcho_s_govyadinoj"><img class="cat-item__img" src="images/gruzinskij_harcho_s_govyadinoj.png" alt="Суп &amp;laquo;Харчо с&amp;nbsp;говядиной&amp;raquo;"></a><a class="h3 cat-item__title" href="/gruzinskij_harcho_s_govyadinoj">Суп &laquo;Харчо с&nbsp;говядиной&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Рецепт знаменитого грузинского шефа Романоза Григалашвили!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>219</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="gruzinskij_harcho_s_govyadinoj" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="indijskij_dal">
+                              <div class="cat-item__body"><a href="/indijskij_dal"><img class="cat-item__img" src="images/indijskij_dal.png" alt="Суп &amp;laquo;Масурдал&amp;raquo;"></a><a class="h3 cat-item__title" href="/indijskij_dal">Суп &laquo;Масурдал&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Жемчужина индийской кухни! Всегда мало, всегда нарасхват!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>199</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="indijskij_dal" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="klem_chauder_s_midiyami">
+                              <div class="cat-item__body"><a href="/klem_chauder_s_midiyami"><img class="cat-item__img" src="images/klem_chauder_s_midiyami.png" alt="Суп &amp;laquo;Клэм Чаудер&amp;raquo;"></a><a class="h3 cat-item__title" href="/klem_chauder_s_midiyami">Суп &laquo;Клэм Чаудер&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Пожалуй, суп &#8470;&nbsp;1&nbsp;в Соединенных Штатах! На&nbsp;удивление вкусно и&nbsp;сытно!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>229</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="klem_chauder_s_midiyami" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="ma_po_s_tof">
+                              <div class="cat-item__body"><a href="/ma_po_s_tof"><img class="cat-item__img" src="images/ma_po_s_tof.png" alt="Суп &amp;laquo;МА&amp;nbsp;ПО с&amp;nbsp;тофу&amp;raquo;"></a><a class="h3 cat-item__title" href="/ma_po_s_tof">Суп &laquo;МА&nbsp;ПО с&nbsp;тофу&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Одно из&nbsp;самых известных блюд китайской кухни. Разрыв шаблона и&nbsp;желание всегда иметь&nbsp;НЗ!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>219</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="ma_po_s_tof" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="mataj_zhyoltyj_s_kuricej">
+                              <div class="cat-item__body"><a href="/mataj_zhyoltyj_s_kuricej"><img class="cat-item__img" src="images/mataj_zhyoltyj_s_kuricej.png" alt="Суп &amp;laquo;МАТАЙ желтый с&amp;nbsp;курицей&amp;raquo;"></a><a class="h3 cat-item__title" href="/mataj_zhyoltyj_s_kuricej">Суп &laquo;МАТАЙ желтый с&nbsp;курицей&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Давно не&nbsp;испытывал бурю вкусовых эмоций? Ты&nbsp;должен это попробовать! Обязательно!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>209</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="mataj_zhyoltyj_s_kuricej" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="mataj_zelenyj_s_tofu">
+                              <div class="cat-item__body"><a href="/mataj_zelenyj_s_tofu"><img class="cat-item__img" src="images/mataj_zelenyj_s_tofu.png" alt="Суп &amp;laquo;МАТАЙ зеленый с&amp;nbsp;тофу&amp;raquo;"></a><a class="h3 cat-item__title" href="/mataj_zelenyj_s_tofu">Суп &laquo;МАТАЙ зеленый с&nbsp;тофу&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Радость ортодоксального вегана! Все, что доктор прописал!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>209</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="mataj_zelenyj_s_tofu" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="mataj_krasnyj_s_govyadinoj">
+                              <div class="cat-item__body"><a href="/mataj_krasnyj_s_govyadinoj"><img class="cat-item__img" src="images/mataj_krasnyj_s_govyadinoj.png" alt="Суп &amp;laquo;МАТАЙ красный с&amp;nbsp;говядиной&amp;raquo;"></a><a class="h3 cat-item__title" href="/mataj_krasnyj_s_govyadinoj">Суп &laquo;МАТАЙ красный с&nbsp;говядиной&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Восходящая звезда паназиатской кухни! Попробуй первым&nbsp;&mdash; будь в&nbsp;тренде!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>229</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="mataj_krasnyj_s_govyadinoj" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="miso_s_gribami_shiitake">
+                              <div class="cat-item__body"><a href="/miso_s_gribami_shiitake"><img class="cat-item__img" src="images/miso_s_gribami_shiitake.png" alt="Суп &amp;laquo;МИСО с&amp;nbsp;грибами шиитаке&amp;raquo;"></a><a class="h3 cat-item__title" href="/miso_s_gribami_shiitake">Суп &laquo;МИСО с&nbsp;грибами шиитаке&raquo;</a>
+                                <p class="text text--gray cat-item__desc"></p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>199</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="miso_s_gribami_shiitake" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="nemeckij_pihelshtajner">
+                              <div class="cat-item__body"><a href="/nemeckij_pihelshtajner"><img class="cat-item__img" src="images/nemeckij_pihelshtajner.png" alt="Суп &amp;laquo;Пихельштайнер&amp;raquo;"></a><a class="h3 cat-item__title" href="/nemeckij_pihelshtajner">Суп &laquo;Пихельштайнер&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Ахтунг, господа! К&nbsp;столу подается рагу Бисмарка&nbsp;&mdash; три вида мяса!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>229</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="nemeckij_pihelshtajner" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="to_yam_nam_kkhon_s_moreproduktami">
+                              <div class="cat-item__body"><a href="/to_yam_nam_kkhon_s_moreproduktami"><img class="cat-item__img" src="images/to_yam_nam_kkhon_s_moreproduktami.png" alt="Суп &amp;laquo;ТОМ&amp;nbsp;ЯМ с&amp;nbsp;морепродуктами&amp;raquo;"></a><a class="h3 cat-item__title" href="/to_yam_nam_kkhon_s_moreproduktami">Суп &laquo;ТОМ&nbsp;ЯМ с&nbsp;морепродуктами&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Легендарный... возбуждающий...желанный... богатый... Теперь твоя очередь!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>259</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="to_yam_nam_kkhon_s_moreproduktami" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="tom_yam_s_kuricej_i_gribami">
+                              <div class="cat-item__body"><a href="/tom_yam_s_kuricej_i_gribami"><img class="cat-item__img" src="images/tom_yam_s_kuricej_i_gribami.png" alt="Суп &amp;laquo;ТОМ&amp;nbsp;ЯМ с&amp;nbsp;курицей и&amp;nbsp;грибами&amp;raquo;"></a><a class="h3 cat-item__title" href="/tom_yam_s_kuricej_i_gribami">Суп &laquo;ТОМ&nbsp;ЯМ с&nbsp;курицей и&nbsp;грибами&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Том Ям... Как много в&nbsp;этом звуке для сердца русского слилось...</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>209</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="tom_yam_s_kuricej_i_gribami" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="tureckij_chechevichnyj_sup">
+                              <div class="cat-item__body"><a href="/tureckij_chechevichnyj_sup"><img class="cat-item__img" src="images/tureckij_chechevichnyj_sup.png" alt="Суп &amp;laquo;Мерджимек чорбасы&amp;raquo;"></a><a class="h3 cat-item__title" href="/tureckij_chechevichnyj_sup">Суп &laquo;Мерджимек чорбасы&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Мерджимек чорбасы! Ностальгия по&nbsp;турецким курортам!</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>179</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="tureckij_chechevichnyj_sup" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="finskij_lohikejtto_s_semgoj">
+                              <div class="cat-item__body"><a href="/finskij_lohikejtto_s_semgoj"><img class="cat-item__img" src="images/finskij_lohikejtto_s_semgoj.png" alt="Суп &amp;laquo;Лохикейтто&amp;raquo;"></a><a class="h3 cat-item__title" href="/finskij_lohikejtto_s_semgoj">Суп &laquo;Лохикейтто&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Любимый суп Егора Булатова. Без комментариев.</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>249</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="finskij_lohikejtto_s_semgoj" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 cat__item">
+                            <div class="cat-item" id="fo_s_kuricej">
+                              <div class="cat-item__body"><a href="/fo_s_kuricej"><img class="cat-item__img" src="images/fo_s_kuricej.png" alt="Суп &amp;laquo;ФО&amp;nbsp;с&amp;nbsp;курицей&amp;raquo;"></a><a class="h3 cat-item__title" href="/fo_s_kuricej">Суп &laquo;ФО&nbsp;с&nbsp;курицей&raquo;</a>
+                                <p class="text text--gray cat-item__desc">Более нежный и&nbsp;диетический вариант знаменитого вьетнамского&nbsp;Фо.</p>
+                              </div>
+                              <div class="cat-item__action">
+                                <div class="cat-item__price"><span>199</span> ₽</div>
+                                      <button class="btn btn--green addToCart" data-id="fo_s_kuricej" type="button"><span class="btn__text">В корзину</span>
+                                      </button>
+                              </div>
+                            </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+        <section class="advantages block" id="advantages">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="block__title">
+                  <h2 class="h2 h2--big">Наши преимущества</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row advantages__body">
+              <div class="col-12 col-lg-6">
+                <div class="advantages__left">
+                  <div class="advantages__item">
+                          <div class="item-advantages">
+                            <div class="item-advantages__img">
+                                    <svg class="icon icon--dish ">
+                                      <use xlink:href="images/icons.svg#icon--dish"></use>
+                                    </svg>
+                            </div>
+                            <div class="item-advantages__body">
+                              <h3 class="h3">Уникальный ассортимент</h3>
+                              <p class="text text--gray item-advantages__text">Есть из чего выбрать! <br>Супы со всех континентов</p>
+                            </div>
+                          </div>
+                  </div>
+                  <div class="advantages__item">
+                          <div class="item-advantages">
+                            <div class="item-advantages__img">
+                                    <svg class="icon icon--dish ">
+                                      <use xlink:href="images/icons.svg#icon--dish"></use>
+                                    </svg>
+                            </div>
+                            <div class="item-advantages__body">
+                              <h3 class="h3">&laquo;Зеленый ярлык&raquo;&nbsp;</h3>
+                              <p class="text text--gray item-advantages__text">100% натуральная сертифицированная продукция без консервантов, искусственных красителей, ароматизаторов и&nbsp;усилителей вкуса</p>
+                            </div>
+                          </div>
+                  </div>
+                  <div class="advantages__item">
+                          <div class="item-advantages">
+                            <div class="item-advantages__img">
+                                    <svg class="icon icon--dish ">
+                                      <use xlink:href="images/icons.svg#icon--dish"></use>
+                                    </svg>
+                            </div>
+                            <div class="item-advantages__body">
+                              <h3 class="h3">Прямые цены от&nbsp;производителя</h3>
+                              <p class="text text--gray item-advantages__text">В&nbsp;два раза ниже недорогого ресторана!</p>
+                            </div>
+                          </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="advantages__right">
+                  <div class="advantages__item">
+                          <div class="item-advantages item-advantages--revers">
+                            <div class="item-advantages__img">
+                                    <svg class="icon icon--dish ">
+                                      <use xlink:href="images/icons.svg#icon--dish"></use>
+                                    </svg>
+                            </div>
+                            <div class="item-advantages__body">
+                              <h3 class="h3">Все блюда</h3>
+                              <p class="text text--gray item-advantages__text">Разогреваются в&nbsp;СВЧ-печи в&nbsp;течение 7&nbsp;минут</p>
+                            </div>
+                          </div>
+                  </div>
+                  <div class="advantages__item">
+                          <div class="item-advantages item-advantages--revers">
+                            <div class="item-advantages__img">
+                                    <svg class="icon icon--dish ">
+                                      <use xlink:href="images/icons.svg#icon--dish"></use>
+                                    </svg>
+                            </div>
+                            <div class="item-advantages__body">
+                              <h3 class="h3">Хранение</h3>
+                              <p class="text text--gray item-advantages__text">В морозильной камере до 6 месяцев</p>
+                            </div>
+                          </div>
+                  </div>
+                  <div class="advantages__item">
+                          <div class="item-advantages item-advantages--revers">
+                            <div class="item-advantages__img">
+                                    <svg class="icon icon--dish ">
+                                      <use xlink:href="images/icons.svg#icon--dish"></use>
+                                    </svg>
+                            </div>
+                            <div class="item-advantages__body">
+                              <h3 class="h3">Посмотрите, как это сделано!</h3>
+                              <p class="text text--gray item-advantages__text">Видео приготовления каждого блюда на нашем канале в YOUTUBE!</p>
+                            </div>
+                          </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+              <div class="subscription-form block">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-md-10 offset-md-1">
+                      <div class="subscription-form__body">
+                        <div class="subscription-form__left">
+                          <h2 class="h2 h2--32 subscription-form__title">Получи скидку <span>10%</span></h2>
+                          <p class="text-14 text-14--color-1">Скидка на второй заказ при покупке от 12 порций</p>
+                        </div>
+                        <div class="subscription-form__rigt">
+                          <div class="form-subscription">
+                            <form class="form-subscription__form" action="#" method="post">
+                              <div class="form-subscription__form-item">
+                                      <div class="input input--form">
+                                        <input class="input__input" type="email" name="email_client" id="email_client" placeholder="Ваш Email">
+                                      </div>
+                              </div>
+                              <div class="form-subscription__form-item">
+                                      <button class="btn" type="submit"><span class="btn__text">отправить</span>
+                                      </button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <section class="delivery block" id="delivery">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="block__title">
+                        <h2 class="h2">Доставка</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-4 delivery-item">
+                            <div class="item-delivery">
+                              <div class="item-delivery__value">01</div>
+                              <p class="text text--gray item-delivery__desc">Доставка осуществляется после подтверждения заказа и согласования даты и времени.</p>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-4 delivery-item">
+                            <div class="item-delivery">
+                              <div class="item-delivery__value">02</div>
+                              <p class="text text--gray item-delivery__desc">Курьеры обеспечены медицинскими масками и санитайзерами для обработки рук.</p>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-4 delivery-item">
+                            <div class="item-delivery">
+                              <div class="item-delivery__value">03</div>
+                              <p class="text text--gray item-delivery__desc">За 30 минут до приезда курьер позвонит Вам для подтверждения доставки.</p>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-4 delivery-item">
+                            <div class="item-delivery">
+                              <div class="item-delivery__value">04</div>
+                              <p class="text text--gray item-delivery__desc">Все сотрудники склада и службы доставки проходят ежедневные медосмотры.</p>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-4 delivery-item">
+                            <div class="item-delivery">
+                              <div class="item-delivery__value">05</div>
+                              <p class="text text--gray item-delivery__desc">На складе и во время доставки соблюдается необходимый температурный режим</p>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-4 delivery-item">
+                            <div class="item-delivery">
+                              <div class="item-delivery__value">06</div>
+                              <p class="text text--gray item-delivery__desc">Вся продукция герметично упакована, транспортная тара опломбирована.</p>
+                            </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+        <div class="contacts block" id="contacts">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="block__title">
+                  <h2 class="h2">Адреса розничных точек продаж</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contacts__map">
+            <div class="contacts__wraper">
+              <div class="map" id="map"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 footer__page">
+              <div class="footer__page">
+                <p class="text text--16 text--white">© 2020, ООО «ГРАНД» Все права защищены</p>
+                <p class="text text--16 text--white">Юридический адрес: 456200, Челябинская область, г. Златоуст, ул. Косотурская, д. 17, тел.<br><a class="link link--white" href="tel:+73513620067">+7&nbsp;(351)&nbsp;362&#8209;00&#8209;67</a>,  <a class="link link--white" href="tel:+73513620080">+7&nbsp;(351)&nbsp;362&#8209;00&#8209;80</a>.</p>
+              </div>
+              <div class="footer__disclaimer footer__page">
+                <p class="text text--12 text--white">Изготовитель вправе менять комплектацию и характеристики товара без предварительного уведомления. Пожалуйста, уточняйте информацию у менеджеров.<br>Интернет ресурс носит исключительно информационный характер и не является публичной офертой, определяемой положениями ст. 437 Гражданского кодекса РФ.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal city" id="cityNameModal">
+        <div class="modal-form__body">
+          <p class="text text--bold text--16 modal-form__title">Выбор города</p>
+          <div class="city__select">
+                  <select class="city-select city-select--modal">
+                    <option value="select_city">Выберите город</option>
+                    <option value="moscow">Москва</option>
+                    <option value="st_petersburg">Санкт-Петербург</option>
+                    <option value="neftekamsk">Нефтекамск</option>
+                    <option value="zlatoust">Златоуст</option>
+                  </select>
+          </div>
+          <p class="modal-form__desc">Если вашего города нет в списке, значит наша компания не осуществляет доставку в вашем регионе. Приносим свои извинения и надеемся, что в скором времени мы откроем в вашем городе представительство.</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.modal.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>$(document).ready(function () {	svg4everybody({});});</script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
